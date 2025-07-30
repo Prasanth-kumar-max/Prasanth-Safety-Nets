@@ -420,9 +420,9 @@
                     <p class="text-sm text-gray-600">Dwaraka Nagar, Visakhapatnam</p>
                 </div>
             </div>
-           <div class="hidden lg:flex items-center space-x-8">
-                <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About Us</a>
                 <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Services</a>
                 <a href="#products" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Products</a>
                 <a href="#locations" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Locations</a>
@@ -431,28 +431,26 @@
                     Contact Us
                 </a>
             </div>
-
-
             <button class="lg:hidden text-gray-700" onclick="toggleMobileMenu()">
-            <i class="fas fa-bars text-2xl"></i>
-        </button>
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </div>
-   <div id="mobileMenu" class="mobile-menu fixed inset-y-0 left-0 w-80 bg-white shadow-2xl lg:hidden z-50 ">            <div class="p-6">
+        <div id="mobileMenu" class="mobile-menu fixed inset-y-0 left-0 w-80 bg-white shadow-2xl lg:hidden z-50 transform -translate-x-full transition-transform duration-300">
+            <div class="p-6">
                 <div class="flex justify-between items-center mb-8">
                     <h2 class="text-xl font-bold text-gray-800">Menu</h2>
                     <button onclick="toggleMobileMenu()" class="text-gray-600">
                         <i class="fas fa-times text-2xl"></i>
                     </button>
                 </div>
-               <nav class="space-y-4">
-                    <a href="index.html" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Home</a>
-                    <a href="#about" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">About</a>
+                <nav class="space-y-4">
+                    <a href="#home" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Home</a>
+                    <a href="#about" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">About Us</a>
                     <a href="#services" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Services</a>
                     <a href="#products" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Products</a>
                     <a href="#locations" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Locations</a>
                     <a href="#contact" class="block py-3 text-gray-700 hover:text-blue-600 font-medium border-b">Contact</a>
                 </nav>
-
             </div>
         </div>
     </nav>
@@ -489,9 +487,49 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">About Prasanth Safety Nets</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Your trusted partner for safety solutions in Dwaraka Nagar and beyond
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 mb-6">
+                        At Prasanth Safety Nets, we are committed to providing top-quality safety net solutions to protect homes, businesses, and construction sites across Dwaraka Nagar, Visakhapatnam. With over a decade of experience, we specialize in delivering durable, reliable, and aesthetically pleasing safety nets tailored to your needs.
+                    </p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Why We Stand Out</h3>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                        <li>Over 10 years of expertise in safety net installations</li>
+                        <li>High-quality materials ensuring long-lasting protection</li>
+                        <li>Professional and timely service across multiple cities</li>
+                        <li>Trusted by over 500+ satisfied customers</li>
+                    </ul>
+                    <div class="mt-8">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Contact Us Today
+                        </a>
+                    </div>
+                </div>
+                <div class="image-overlay">
+                    <img src="about-image.jpg" alt="About Prasanth Safety Nets" class="w-full h-96 object-cover rounded-lg">
+                    <div class="overlay-content">
+                        <h3 class="text-2xl font-bold">Safety First</h3>
+                        <p>Protecting what matters most to you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
-    
-   <section id="services" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="services" class="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Premium Services</h2>
@@ -635,7 +673,7 @@
                             <p class="font-semibold">Pool Safety</p>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Swimming Pool Safety Nets</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Swimming Pool Safety Nets</h3OMEM
                     <p class="text-gray-600 mb-6">Prevents accidents and keeps pools safe for children and pets during the off-season.</p>
                     <div class="flex justify-between items-center">
                         <a href="Swimming 1.html" class="btn-primary text-sm">
@@ -648,7 +686,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="service-card p-8 hover-lift">
+                <div class="service-card p-8 hover-lift">
                     <div class="image-overlay mb-6">
                         <img src="grill.jpg" alt="Invisible grills" class="w-full h-48 object-cover">
                         <div class="overlay-content">
@@ -789,7 +827,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Why Choose Us Section -->
     <section id="why-choose-us" class="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -1078,10 +1115,10 @@
                     <p class="text-gray-400">Leading provider of safety net solutions in Dwaraka Nagar, Visakhapatnam, ensuring safety for homes and businesses.</p>
                 </div>
                 <div>
-                   <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="#home" class="text-gray-400 hover:text-blue-400">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-blue-400">About</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400">About Us</a></li>
                         <li><a href="#services" class="text-gray-400 hover:text-blue-400">Services</a></li>
                         <li><a href="#products" class="text-gray-400 hover:text-blue-400">Products</a></li>
                         <li><a href="#why-choose-us" class="text-gray-400 hover:text-blue-400">Why Choose Us</a></li>
@@ -1109,11 +1146,10 @@
     <script>
         // Mobile Menu Toggle
         function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('-translate-x-full');
-  }
-
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('-translate-x-full');
+        }
 
         // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
@@ -1125,14 +1161,21 @@
             }
         });
 
-        // Contact Form Submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            e.target.reset();
+        // Enquiry Form Submission
+        document.getElementById('enquiryForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const mobile = document.getElementById('mobile').value.trim();
+            const service = document.getElementById('service').value;
+            const messageText = document.getElementById('message').value.trim();
+            const message = `Enquiry Form Submission:\nName: ${name}\nMobile: ${mobile}\nService: ${service}\nMessage: ${messageText}`;
+            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            alert('Enquiry sent via WhatsApp!');
+            event.target.reset();
         });
 
-        // Enquiry Form Submission
+        // Contact Form Submission
         document.getElementById('contactForm').addEventListener('submit', (event) => {
             event.preventDefault();
             const name = document.getElementById('name').value.trim();
@@ -1165,7 +1208,7 @@
                     });
                 }
                 const mobileMenu = document.getElementById('mobileMenu');
-                if (mobileMenu.classList.contains('active')) {
+                if (!mobileMenu.classList.contains('hidden')) {
                     toggleMobileMenu();
                 }
             });
@@ -1180,24 +1223,10 @@
             document.getElementById('enquiryModal').classList.remove('active');
         }
 
-        // Show modal after 5 minutes
+        // Show modal after 3 minutes
         setTimeout(() => {
             openModal();
         }, 3 * 60 * 1000);
-
-
-           document.getElementById('contactForm').addEventListener('submit', (event) => {
-            event.preventDefault();
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const messageText = document.getElementById('message').value.trim();
-            const message = `Contact Form Submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${messageText}`;
-            const whatsappUrl = `https://wa.me/919392702123?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-            alert('Message sent via WhatsApp!');
-            event.target.reset();
-        });
     </script>
 </body>
 </html>
